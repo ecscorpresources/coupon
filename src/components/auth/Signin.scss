@@ -1,0 +1,108 @@
+@import "../../css/main.scss";
+
+.modal_body > div:first-child {
+  text-align: right;
+  padding-right: 14px;
+  padding-top: 8px;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.modal_body form {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.modal_body form h1 {
+  color: #2e5c71;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.modal_body form > div {
+  width: 85%;
+  margin: auto;
+}
+
+.modal_body form > div div:not(:nth-child(3)) {
+  margin-bottom: 15px;
+}
+
+.modal_body form > div div:nth-child(3) {
+  margin-bottom: 10px;
+}
+
+.modal_body form p {
+  color: #2e5c71;
+  font-size: 14px;
+
+  a {
+    color: #f58634;
+    font-size: 14px;
+    display: inline-block;
+    padding-left: 5px;
+    text-decoration: underline;
+  }
+}
+
+.modal_body span {
+  display: block;
+  color: #2e5c71;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.modal_body form input {
+  width: 100%;
+  border: 1px solid #2e5c71;
+  padding: 8px 0 8px 10px;
+  border-radius: 4px;
+}
+
+.modal_body form div.agreement {
+  display: flex;
+  p {
+    font-size: 13px;
+  }
+}
+
+.modal_body form input::placeholder {
+  font-size: 14px;
+  color: #2e5c71;
+}
+
+.modal_body form div.password_forget {
+  text-align: right;
+}
+
+.modal_body form div.password_forget a {
+  color: #2e5c71;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.modal_body form button {
+  width: 100%;
+  border: none;
+  color: #fff;
+  background-color: $secondary-color;
+  border-radius: 4px;
+  padding: 8px;
+  display: inline-block;
+}
+
+a.button {
+  display: block;
+  border: none;
+  color: #fff;
+  background-color: $secondary-color;
+  border-radius: 4px;
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
+}

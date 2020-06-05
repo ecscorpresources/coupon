@@ -1,0 +1,102 @@
+@import "../../../css/main.scss";
+
+footer {
+  background-color: $footer-background;
+  color: #fff;
+  padding: 10rem 0;
+  @media screen and(max-width:992px) {
+    padding: 5rem;
+  }
+
+  & section {
+    display: flex;
+    justify-content: space-around;
+    @media screen and(max-width:992px) {
+      flex-direction: column;
+    }
+
+    article:first-child {
+      & div:first-child {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        @media screen and(max-width:992px) {
+          border-bottom: none;
+        }
+
+        h4 {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 600;
+          font-size: 1.3rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    ul.links {
+      display: flex;
+
+      li:not(:first-child) {
+        margin-left: 1.5rem;
+        border-left: 1px solid #fff;
+        padding-left: 1.5rem;
+        @media screen and(max-width:992px) {
+          border-left: none;
+          padding-left: 0;
+          margin-left: 0;
+        }
+      }
+      @media screen and(max-width:992px) {
+        flex-direction: column;
+      }
+    }
+
+    ul.socials {
+      display: flex;
+
+      li:not(:first-child) {
+        margin-left: 2rem;
+      }
+    }
+
+    ul {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      li a {
+        color: #fff;
+        text-decoration: none !important;
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+
+        &:hover {
+          color: #fff;
+          text-decoration: none !important;
+        }
+      }
+    }
+  }
+
+  p {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    font-family: "Open Sans", sans-serif;
+    padding-left: 15rem;
+    padding-top: 2rem;
+    @media screen and(max-width:992px) {
+      padding-left: 0;
+    }
+  }
+
+  article:nth-child(2) {
+    h5 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      @media screen and(max-width:992px) {
+        text-align: left;
+      }
+    }
+  }
+}
