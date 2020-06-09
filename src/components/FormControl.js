@@ -80,6 +80,15 @@ export const UNEQUALEDGRID = styled.article`
   }
 `;
 
+export const FOUREQUALGRID = styled.article`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 4fr;
+  column-gap: 1rem;
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
 export const GRID = styled.article`
   display: grid;
   grid-template-columns: 1fr;

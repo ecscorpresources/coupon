@@ -7,6 +7,8 @@ import Landing from "./components/pages/Landing";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Profile from "./components/Dashboard/ProfileForm";
 import ChangePassword from "./components/Dashboard/ChangePassword";
+import ProductList from "./components/ProductList";
+import UploadCuopon from "./components/Dashboard/UploadCoupon";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/changepassword" component={ChangePassword} />
+          <Route exact path="/products" component={ProductList} />
+          <Route exact path="/uploadcuopon" component={UploadCuopon} />
         </Switch>
         <Footer />
       </Router>
