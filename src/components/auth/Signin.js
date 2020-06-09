@@ -39,7 +39,7 @@ const SignIn = (props) => {
                 <input type="password" placeholder="Password" />
               </div>
               <div>
-                <Link>forget password?</Link>
+                <Link to="/"> forget password?</Link>
               </div>
               <div>
                 <LoginLink onClick={toggle} to="/dashboard">

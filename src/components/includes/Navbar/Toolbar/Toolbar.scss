@@ -1,3 +1,5 @@
+@import "../../../../css/main.scss";
+
 .toolbar_navigation {
   height: 100%;
   display: flex;
@@ -5,7 +7,7 @@
   padding: 3rem 4rem;
   position: relative;
   z-index: 1;
-  background-color: #ddd;
+  background-color: $nav-color;
 }
 
 .toolbar_navigation_items {
@@ -94,16 +96,6 @@
           font-size: 1.4rem;
         }
       }
-    }
-
-    a {
-      border: 2px solid #1d9ed8;
-      color: #1d9ed8;
-      background-color: #fff;
-      text-decoration: none;
-      display: inline-block;
-      font-weight: 400;
-      font-size: 1.4rem !important;
     }
   }
 }

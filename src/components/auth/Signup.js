@@ -10,7 +10,9 @@ const SignUp = () => {
   const closeModal = () => setModal(!modal);
   return (
     <>
-      <Link onClick={toggle}>SignUp</Link>
+      <JoinLink to="/" onClick={toggle}>
+        Join For Free
+      </JoinLink>
       <Modal isOpen={modal} toggle={toggle} size="md">
         <ModalWrapper>
           <ModalBody>
@@ -72,6 +74,20 @@ const SignUp = () => {
     </>
   );
 };
+
+const JoinLink = styled(Link)`
+  border: 2px solid #1d9ed8;
+  color: #1d9ed8;
+  background-color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.4rem !important;
+  text-align: center;
+  border-radius: 50px;
+  padding: 3px 20px;
+  font-family: "Open Sans", sans-serif;
+`;
 
 const SignupLink = styled(PrimaryLink)`
   display: block;

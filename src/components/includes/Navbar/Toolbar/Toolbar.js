@@ -2,10 +2,8 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import "./Toolbar.scss";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
-import navlinks from "../../../constants/navlinks";
-import Signin from "../../../auth/Signin";
-import Signup from "../../../auth/Signup";
 import { MdArrowDropDown } from "react-icons/md";
+import Signup from "../../../auth/Signup";
 
 const Toolbar = (props) => {
   const location = props.location.pathname;
@@ -53,13 +51,13 @@ const Toolbar = (props) => {
               </ul>
             </li>
             <li>
-              <Link>Stores</Link>
+              <Link to="/">Stores</Link>
             </li>
             <li>
-              <Link>Hot Deals</Link>
+              <Link to="/">Hot Deals</Link>
             </li>
             <li>
-              <Link>Sell</Link>
+              <Link to="/">Sell</Link>
             </li>
           </ul>
 
@@ -76,7 +74,7 @@ const Toolbar = (props) => {
             <ul className="login_signup">
               {location === "/" ? (
                 <li>
-                  <Signin />
+                  <Signup />
                 </li>
               ) : (
                 <li className="dashbaord-dropdown">

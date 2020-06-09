@@ -7,7 +7,6 @@ export const PrimaryLink = styled(Link)`
   display: inline-block;
   font-size: 14px;
   border-radius: 50px;
-  border-radius: 50px;
   padding: 3px 20px;
   font-family: "Open Sans", sans-serif;
 `;

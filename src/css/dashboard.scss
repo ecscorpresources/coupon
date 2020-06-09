@@ -1,0 +1,141 @@
+.dashboard {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #ddd;
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+  @media screen and(max-width:992px) {
+    justify-content: flex-start;
+  }
+
+  & article {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+
+    @media screen and(max-width:992px) {
+      flex-direction: column;
+    }
+
+    div {
+      padding: 1rem 4rem 1rem 2rem;
+      flex: 1 1;
+      border-radius: 5px;
+
+      img {
+        width: 53px;
+        height: 49px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+
+        @media screen and(max-width:992px) {
+          margin-bottom: 3rem;
+          margin-right: 0;
+        }
+      }
+
+      & h4 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 2rem;
+        padding-top: 1rem;
+      }
+
+      & p {
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+    }
+
+    div:first-child {
+      background-color: #cde4f1;
+    }
+
+    div:nth-child(2) {
+      background-color: #fae0b6;
+    }
+
+    div:nth-child(3) {
+      background-color: #f7b3aa;
+    }
+  }
+}
+
+.dashboardSecondSection {
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 7rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  padding: 4rem 0;
+
+  & article:nth-child(2) {
+    display: flex;
+    justify-content: center;
+
+    a {
+      color: #fff;
+      background-color: #094a6a;
+      border: none;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      font-size: 2rem;
+      padding: 0.5rem 4rem;
+      text-decoration: none;
+      font-family: "Open Sans", sans-serif;
+      border-radius: 4px;
+    }
+  }
+
+  .table-title {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: #606c86;
+      text-decoration: underline;
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      color: #0c74c4;
+      font-weight: 600;
+    }
+  }
+
+  table {
+    width: 100%;
+    font-size: 1.3rem;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+    margin-bottom: 4rem;
+  }
+
+  table thead tr {
+    background-color: #cfddf1;
+    color: #fff;
+  }
+
+  table th {
+    padding: 0 1rem;
+    font-weight: 100;
+    color: #0c74c4;
+  }
+
+  table tr,
+  table td {
+    padding: 1rem 1rem;
+  }
+
+  table tbody tr {
+    border-bottom: 1px solid #606c86;
+  }
+}

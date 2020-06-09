@@ -22,7 +22,7 @@ const Landing = () => {
                 <img src={require("../../assets/img/01.png")} alt="product" />
               </div>
               <h5>18% Off Groceries</h5>
-              <Link>
+              <Link to="/">
                 <img src={require("../../assets/img/04.png")} alt="vendor" />
               </Link>
             </article>
@@ -32,7 +32,7 @@ const Landing = () => {
                 <img src={require("../../assets/img/02.png")} alt="product" />
               </div>
               <h5>23% Off Sport Shoes</h5>
-              <Link>
+              <Link to="/">
                 <img src={require("../../assets/img/05.png")} alt="vendor" />
               </Link>
             </article>
@@ -42,8 +42,8 @@ const Landing = () => {
                 <img src={require("../../assets/img/03.png")} alt="product" />
               </div>
               <h5>10% Off per Night</h5>
-              <Link>
-                <img src={require("../../assets/img/04.png")} alt="vendor" />
+              <Link to="/">
+                <img src={require("../../assets/img/34.png")} alt="vendor" />
               </Link>
             </article>
           </div>
@@ -81,7 +81,7 @@ const Landing = () => {
             <ul>
               {offers.map((offer, index) => (
                 <li key={index}>
-                  <Link>
+                  <Link to="/">
                     <img src={offer.img} alt="" />
                     <p>{offer.text}</p>
                   </Link>
